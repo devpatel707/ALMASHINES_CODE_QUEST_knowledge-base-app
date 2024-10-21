@@ -1,0 +1,131 @@
+.results-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 80vh;
+  transition: all 0.3s ease-in-out;
+}
+
+.result-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f7f9fc;
+  transition: background-color 0.3s ease;
+}
+
+.result-section:hover {
+  background-color: #f0f4f8;
+}
+
+.result-item {
+  margin: 12px 0;
+  padding: 15px;
+  border-bottom: 1px solid #eaeaea;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.result-item:hover {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+h3 {
+  color: #d31e1e;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.section-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.section-nav button {
+  margin: 0 12px;
+  padding: 12px 25px;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.section-nav button:hover {
+  background-color: #009bb6;
+}
+
+.section-nav button.active {
+  background-color: #007c92;
+}
+
+.sort-options {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.sort-options label {
+  margin-right: 12px;
+  font-size: 16px;
+  color: #555;
+}
+
+.sort-options select {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.sort-options select:focus {
+  border-color: #00bcd4;
+  outline: none;
+}
+
+.result-item p {
+  margin: 5px 0;
+  font-size: 14.5px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .results-container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  .section-nav button {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+}
